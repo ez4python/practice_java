@@ -37,6 +37,6 @@ public class Switch {
                 System.out.println("Error! I said from 1 to 7!");
                 break;
         }
-
+        scanner.close();
     }
 }
