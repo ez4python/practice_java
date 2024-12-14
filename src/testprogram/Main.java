@@ -1,16 +1,30 @@
 package testprogram;
 
-import java.util.Scanner;
-import java.util.*;
+class Animal {
+    public void animalSound() {
+        System.out.println("The animal makes a sound");
+    }
+}
 
-public class Main {
+class Pig extends Animal {
+    public void animalSound() {
+        System.out.println("The pig says: wee wee");
+    }
+}
+
+class Dog extends Animal {
+    public void animalSound() {
+        System.out.println("The dog says: bow wow");
+    }
+}
+
+class Main {
     public static void main(String[] args) {
-
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter username: ");
-
-        String username = scanner.nextLine();
-        System.out.println("Username is " + username);
-
+        Animal myAnimal = new Animal();  // Create a Animal object
+        Animal myPig = new Pig();  // Create a Pig object
+        Animal myDog = new Dog();  // Create a Dog object
+        myAnimal.animalSound();
+        myPig.animalSound();
+        myDog.animalSound();
     }
 }
