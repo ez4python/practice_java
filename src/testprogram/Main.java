@@ -1,11 +1,16 @@
 package testprogram;
 
-public class Main {
-    public void fullThrottle() {
-        System.out.println("The car is going as fast as it can!");
-    }
+import java.util.Scanner;
+import java.util.*;
 
-    public void speed(int maxSpeed) {
-        System.out.println("Max speed is: " + maxSpeed);
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter username: ");
+
+        String username = scanner.nextLine();
+        System.out.println("Username is " + username);
+
     }
 }
