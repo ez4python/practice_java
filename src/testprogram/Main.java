@@ -1,31 +1,18 @@
 package testprogram;
 
-class Animal {
-    public void animalSound() {
-        System.out.println("The animal makes a sound");
-    }
-}
 
-class Pig extends Animal {
-    public void animalSound() {
-        System.out.println("The pig says: wee wee");
-    }
-}
+class OuterClass {
+    int x = 10;
 
-class Dog extends Animal {
-    public void animalSound() {
-        System.out.println("The dog says: bow wow");
+    class InnerClass {
+        int y = 5;
     }
 }
 
 public class Main {
     public static void main(String[] args) {
-        Animal myAnimal = new Animal();
-        Animal myPig = new Pig();
-        Animal myDog = new Dog();
-        myAnimal.animalSound();
-        myPig.animalSound();
-        myDog.animalSound();
+        OuterClass outer = new OuterClass();
+        OuterClass.InnerClass inner = outer.new InnerClass();
+        System.out.println(inner.y + outer.x);
     }
-
 }
