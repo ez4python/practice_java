@@ -7,9 +7,9 @@ class Box {
 
     // This is the constructor for Box.
     Box(double w, double h, double d) {
-        width = w;
-        height = h;
-        depth = d;
+        this.width = w;
+        this.height = h;
+        this.depth = d;
     }
 
     // compute and return volume
