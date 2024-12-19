@@ -5,13 +5,14 @@ class Box {
     double height;
     double depth;
 
-    Box() {
-        System.out.println("Constructing Box");
-        width = 10;
-        height = 10;
-        depth = 10;
+    // This is the constructor for Box.
+    Box(double w, double h, double d) {
+        width = w;
+        height = h;
+        depth = d;
     }
 
+    // compute and return volume
     double volume() {
         return width * height * depth;
     }
